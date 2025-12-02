@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>PING PONG</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El tenis de mesa, o ping pong, es un deporte de raqueta rápido que se juega sobre una mesa dividida por una red. Dos o cuatro jugadores golpean una pelota ligera para que el oponente no pueda devolverla correctamente.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se juega individualmente (singles) o en parejas (dobles)</li>
+                        <li>El saque debe botar una vez en el lado del sacador y una vez en el lado del receptor</li>
+                        <li>En dobles, el saque debe ser en diagonal (derecha a derecha) y la pareja debe golpear alternativamente</li>
+                        <li>Un "let" (repetición) ocurre si el saque toca la red y pasa correctamente</li>
+                        <li>El partido se gana al mejor de un número impar de sets (normalmente 5 o 7)</li>
+                        <li>Cada set se gana al alcanzar 11 puntos con una ventaja mínima de dos puntos</li>
+                        <li>El saque cambia cada 2 puntos</li>
+                        <li>Los jugadores deben alternar los saques después de que se alcanza el 10-10 (Deuce)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Efectos (Spin): Variar el topspin (hacia adelante), backspin (corte) y sidespin (lateral) para controlar la trayectoria</li>
+                        <li>Juego cerca de la red: Usar golpes cortos y rápidos para presionar al oponente</li>
+                        <li>Juego de defensa: Retroceder para devolver ataques potentes con cortes defensivos (chop)</li>
+                        <li>Ataque al centro: Dirigir la pelota al centro de la mesa (codo del rival) para limitar su ángulo de respuesta</li>
+                        <li>Ataque al lado débil: Atacar consistentemente el lado de la raqueta que el rival maneja peor (generalmente el revés)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Mesa: 2.74m de largo x 1.525m de ancho, a 76cm del suelo</li>
+                        <li>Red: 15.25cm de altura</li>
+                        <li>Raquetas (Paletas): Hechas de madera y cubiertas por una o dos capas de goma</li>
+                        <li>Pelota: Esférica, de 40mm de diámetro, peso ligero y color blanco o naranja</li>
+                        <li>Vestimenta: Ropa deportiva cómoda que contraste con el color de la pelota</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Derecha (Forehand): Golpe con el lado principal de la raqueta</li>
+                        <li>Revés (Backhand): Golpe con el dorso de la mano mirando al frente</li>
+                        <li>Topspin (Loop): Golpe con un efecto fuerte hacia adelante para que la pelota caiga rápidamente</li>
+                        <li>Push (Corte): Golpe defensivo o de iniciación con backspin</li>
+                        <li>Flick/Flip: Golpe ofensivo rápido sobre una pelota corta y baja</li>
+                        <li>Bloqueo (Block): Usar la raqueta de forma rígida para devolver un golpe potente del rival</li>
+                        <li>Empuñaduras: Penhold (Lapicero) y Shakehand (Europea)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>FÚTBOL</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El fútbol es el deporte más popular del mundo. Dos equipos de once jugadores compiten por meter un balón en la portería contraria utilizando cualquier parte del cuerpo excepto manos y brazos (solo el arquero dentro de su área).
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Cada equipo juega con 11 jugadores (1 arquero y 10 de campo)</li>
+                        <li>El partido dura 90 minutos, dividido en dos tiempos de 45 minutos con un descanso</li>
+                        <li>El objetivo es anotar un gol, introduciendo el balón en la meta contraria</li>
+                        <li>Solo el arquero puede usar las manos dentro de su área penal</li>
+                        <li>Faltas: El contacto ilegal resulta en tiros libres o penaltis (si ocurre en el área)</li>
+                        <li>Tarjetas: Amarilla (advertencia) y Roja (expulsión, el equipo juega con un jugador menos)</li>
+                        <li>Fuera de juego (Offside): Un jugador está en posición de fuera de juego si está más cerca de la línea de meta contraria que el balón y el penúltimo adversario en el momento en que se le pasa el balón</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Sistema de juego: Disposición de los jugadores (ej: 4-4-2, 4-3-3, 3-5-2)</li>
+                        <li>Presión alta: Intentar recuperar el balón cerca de la portería rival</li>
+                        <li>Contragolpe: Defender en bloque y atacar rápidamente tras recuperar el balón</li>
+                        <li>Posesión: Controlar el balón y el ritmo del juego mediante pases cortos</li>
+                        <li>Defensa en zona: Cada defensor cubre un área específica en lugar de un rival directo</li>
+                        <li>Tiros libres y córners: Jugadas preparadas para crear oportunidades de gol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Balón de fútbol (talla 5 para adultos)</li>
+                        <li>Campo de césped o artificial, de forma rectangular (aprox. 100-110m x 64-75m)</li>
+                        <li>Dos porterías con redes</li>
+                        <li>Vestimenta: Camiseta, pantalón corto, medias y canilleras (espinilleras) obligatorias</li>
+                        <li>Calzado: Botines con tacos para un mejor agarre en el césped</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Pase: Entrega del balón a un compañero (con interior, exterior, empeine)</li>
+                        <li>Regate (Drible): Conducción del balón superando a un rival (bicicleta, elástica)</li>
+                        <li>Remate: Lanzamiento del balón a portería (de empeine, de cabeza)</li>
+                        <li>Control (Recepción): Amortiguar el balón para dominarlo (con el pie, pecho, cabeza)</li>
+                        <li>Tacle (Entrada): Acción defensiva para quitar el balón limpiamente</li>
+                        <li>Atajada: Acción del arquero para detener un remate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

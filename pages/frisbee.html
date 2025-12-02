@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Frisbee - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="alternativos.html" class="back-arrow">←</a>
+            <h2>DEPORTE ALTERNATIVO <span>ULTIMATE FRISBEE</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El Ultimate Frisbee es un deporte de equipo sin contacto que se juega con un disco volador (frisbee). El objetivo es atrapar el disco dentro de la zona de anotación del rival, sin correr mientras se tiene la posesión.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS CLAVE</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se juega con 7 jugadores por equipo en cancha (o 5 en playa).</li>
+                        <li>No contacto: Está prohibido el contacto físico entre jugadores.</li>
+                        <li>No se puede correr con el disco: El jugador debe pivotar sobre un pie mientras mantiene la posesión.</li>
+                        <li>Pase y posesión: El disco debe ser pasado en un límite de 10 segundos.</li>
+                        <li>Cambio de posesión (Turnover): Si el pase es interceptado, cae al suelo, o sale de los límites de la cancha.</li>
+                        <li>Auto-arbitraje (Espíritu de Juego): Los jugadores son responsables de hacer cumplir las reglas y resolver las disputas.</li>
+                        <li>Puntuación: Se anota cuando un jugador recibe el disco dentro de la zona de anotación rival.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Stack (Pila): Formación ofensiva para crear espacio, donde los jugadores se alinean en el centro del campo.</li>
+                        <li>Cortes (Cuts): Movimientos repentinos y rápidos para desmarcarse y recibir el disco.</li>
+                        <li>Defensa de zona: El equipo cubre áreas específicas en lugar de marcar individualmente (ej: "Cup").</li>
+                        <li>Fuerza de marcaje (Force): Intentar forzar al lanzador a pasar el disco a un lado de la cancha.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Disco Volador (Frisbee): De 175 gramos, de plástico y diseñado para el vuelo estable.</li>
+                        <li>Cancha: Rectangular (aprox. 100m x 37m en total), con zonas de anotación a cada extremo.</li>
+                        <li>Línea de gol (Goal Line): Marca el inicio de la zona de anotación.</li>
+                        <li>Vestimenta: Ropa deportiva cómoda, zapatillas de fútbol (tacos) si se juega en césped.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS DE LANZAMIENTO</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Revés (Backhand): Lanzamiento clásico con el disco en el lado opuesto al cuerpo.</li>
+                        <li>Derecha (Forehand o Flick): Lanzamiento con un movimiento de muñeca y el disco en el lado dominante.</li>
+                        <li>Hammer: Lanzamiento por encima de la cabeza, con el disco invertido, para trayectorias altas y curvas.</li>
+                        <li>Scoober: Lanzamiento corto y rápido, similar al Hammer, pero más bajo.</li>
+                        <li>Recepción: Atrapar el disco con las dos manos (pinza) o con una mano (panqueque).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

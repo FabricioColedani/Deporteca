@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodgeball - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="alternativos.html" class="back-arrow">←</a>
+            <h2>DEPORTE ALTERNATIVO <span>DODGEBALL (BALÓN PRISIONERO)</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El Dodgeball, o Balón Prisionero, es un deporte de eliminación que enfrenta a dos equipos. El objetivo es eliminar a todos los jugadores del equipo contrario golpeándolos con la pelota o atrapando una pelota lanzada por un oponente.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS CLAVE</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se juega con 6 jugadores por equipo en cancha.</li>
+                        <li>Eliminación: Un jugador es eliminado si es golpeado con una pelota lanzada, si lanza una pelota y esta es atrapada por el oponente, o si cruza la línea central (zona neutral).</li>
+                        <li>Captura: Si un jugador atrapa una pelota lanzada por un oponente, el lanzador queda eliminado y un compañero del equipo que atrapó regresa al juego.</li>
+                        <li>Salida: El juego comienza con una carrera a la línea central para recoger las pelotas.</li>
+                        <li>Cabezas: Golpear a un oponente en la cabeza generalmente no cuenta como eliminación (aunque depende de las reglas de la liga).</li>
+                        <li>Ganador: El juego termina cuando todos los jugadores de un equipo son eliminados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Ataque coordinado: Lanzar varias pelotas simultáneamente para abrumar a los rivales y dificultar la captura.</li>
+                        <li>Defensa de escudos: Usar una pelota como "escudo" para bloquear un lanzamiento rival.</li>
+                        <li>Ataque a las esquinas: Dirigir el ataque a los jugadores más expuestos o menos hábiles en los extremos de la cancha.</li>
+                        <li>Control de pelotas: Mantener la posesión de más pelotas que el rival otorga una ventaja de presión.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Pelotas: Generalmente 5 o 6 pelotas de goma espuma o cuero, más suaves que un balón común.</li>
+                        <li>Cancha: Rectangular, dividida por una línea central.</li>
+                        <li>Línea de ataque: Línea de la cual el equipo puede lanzar, generalmente a unos metros de la línea central.</li>
+                        <li>Vestimenta: Ropa deportiva que permita gran movilidad para esquivar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Lanzamiento con efecto: Lanzar la pelota con rotación para que se curve y sea difícil de esquivar.</li>
+                        <li>Lanzamiento de potencia: Usar todo el cuerpo para generar la máxima velocidad de la pelota.</li>
+                        <li>Esquivar (Dodge): Moverse rápidamente, a menudo saltando o agachándose, para evitar el impacto.</li>
+                        <li>Bloqueo/Parada: Usar otra pelota en mano para detener o desviar el lanzamiento del rival.</li>
+                        <li>Captura (Catch): Atrapar el balón con las manos y brazos pegados al cuerpo para asegurar la eliminación rival.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

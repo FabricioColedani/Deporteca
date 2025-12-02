@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vóley - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>VÓLEY</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El voleibol es un deporte de equipo donde dos grupos de seis jugadores intentan pasar el balón por encima de una red y hacerlo caer en el campo contrario. Se caracteriza por un máximo de tres toques por equipo para devolver el balón.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Cada equipo juega con 6 jugadores en la cancha</li>
+                        <li>El objetivo es que el balón toque el suelo del campo rival</li>
+                        <li>Cada equipo solo puede dar un máximo de 3 toques para devolver el balón</li>
+                        <li>No se puede retener, empujar o lanzar el balón (doble golpe o retención)</li>
+                        <li>Un mismo jugador no puede tocar el balón dos veces consecutivas (excepto después de un bloqueo)</li>
+                        <li>Puntuación: Se usa el sistema de puntos por jugada (Rally Point), el primer equipo en alcanzar 25 puntos con una ventaja de dos gana el set</li>
+                        <li>El partido se gana al mejor de 5 sets (4 sets a 25 puntos y el 5º set a 15 puntos)</li>
+                        <li>Rotación: Los jugadores deben rotar una posición en sentido horario después de que el equipo recupera el saque</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Complejo I (Recepción-Ataque): Se enfoca en la recepción del saque y la organización inmediata del ataque</li>
+                        <li>Complejo II (Defensa-Contraataque): Se enfoca en la defensa de un ataque rival y la posterior transición al ataque</li>
+                        <li>Bloqueo: Barrera defensiva sobre la red para impedir el ataque del rival o suavizarlo</li>
+                        <li>Sistema 5-1: Un armador principal (colocador) y cinco rematadores (atacantes)</li>
+                        <li>Sistema 4-2: Cuatro rematadores y dos armadores</li>
+                        <li>Zonas de ataque: Utilizar las zonas 2, 3 y 4 para remates y la zona 6 para defensa central</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Balón de voleibol: Esférico, con cámara interior y de cuero flexible o sintético</li>
+                        <li>Cancha rectangular: 18m de largo x 9m de ancho, dividida por una red</li>
+                        <li>Red: Altura de 2.43m para hombres y 2.24m para mujeres (categoría adulta)</li>
+                        <li>Antenas: Colocadas en los límites laterales de la red para demarcar el espacio de paso del balón</li>
+                        <li>Línea de ataque: Marcada a 3m de la red; los zagueros no pueden rematar delante de ella</li>
+                        <li>Calzado deportivo: Zapatillas con buena amortiguación y soporte de tobillo para saltos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Toque de dedos (Colocación): Usado principalmente por el armador para preparar el remate</li>
+                        <li>Golpe de antebrazos (Recepción/Defensa): Usado para recibir el saque o defender ataques bajos</li>
+                        <li>Saque: Puesta en juego del balón; puede ser de abajo, de tenis, flotante o potente (jump service)</li>
+                        <li>Remate (Ataque): Salto y golpe fuerte con la palma para dirigir el balón al suelo rival</li>
+                        <li>Bloqueo: Salto cerca de la red con manos rígidas para interceptar el ataque</li>
+                        <li>Defensa de campo: Uso de pases bajos o "planchas" para evitar que el balón toque el suelo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

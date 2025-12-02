@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>JUEGO MENTAL <span>AJEDREZ</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El ajedrez es un juego de estrategia y táctica que enfrenta a dos oponentes. El objetivo es dar jaque mate al rey del adversario, inmovilizando al monarca para que no pueda escapar de la captura.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se juega en un tablero de 8x8 (64 casillas alternando colores)</li>
+                        <li>Cada jugador comienza con 16 piezas: 1 Rey, 1 Dama, 2 Torres, 2 Alfiles, 2 Caballos y 8 Peones</li>
+                        <li>El blanco siempre hace el primer movimiento</li>
+                        <li>Las piezas solo pueden moverse según sus reglas específicas (ej: el Caballo en forma de 'L')</li>
+                        <li>Jaque: El Rey está amenazado de captura; el jugador debe salir del jaque inmediatamente</li>
+                        <li>Jaque Mate: El Rey está en jaque y no hay movimientos legales para evitar la captura; esto finaliza la partida</li>
+                        <li>Empate (Tablas): Puede ocurrir por ahogado, triple repetición de posición, o insuficiencia de material</li>
+                        <li>Captura al paso (En Passant) y Enroque: Movimientos especiales con reglas específicas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Apertura: Fase inicial donde se desarrollan las piezas y se controla el centro</li>
+                        <li>Medio juego: Fase de planificación y ejecución de planes estratégicos</li>
+                        <li>Final: Fase con pocas piezas donde el Rey a menudo toma un rol activo</li>
+                        <li>Ataque doble (Horquilla): Un movimiento que amenaza dos piezas rivales a la vez</li>
+                        <li>Clavada: Una pieza no puede moverse porque expondría una pieza de mayor valor detrás de ella</li>
+                        <li>Desviación: Forzar a una pieza rival a moverse para dejar desprotegido un punto clave</li>
+                        <li>Sacrificio: Entregar una pieza a cambio de una ventaja posicional o material futuro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Tablero de ajedrez (64 casillas, 8x8)</li>
+                        <li>Conjunto de piezas blancas y negras (32 en total)</li>
+                        <li>Reloj de ajedrez (en competiciones) para limitar el tiempo de pensamiento</li>
+                        <li>Notación algebraica: Sistema para registrar los movimientos de la partida (ej: e4, Cf3)</li>
+                        <li>Tipos de partidas: Clásico, Rápido, Blitz (muy rápido)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>MOVIMIENTOS CLAVE</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Torre: En líneas rectas (horizontal y vertical)</li>
+                        <li>Alfil: En diagonales</li>
+                        <li>Dama: En líneas rectas y diagonales</li>
+                        <li>Caballo: En forma de 'L' (dos casillas en una dirección y una perpendicular)</li>
+                        <li>Peón: Una casilla hacia adelante (dos en el primer movimiento), captura en diagonal</li>
+                        <li>Rey: Una casilla en cualquier dirección</li>
+                        <li>Promoción de peón: Cuando un peón llega a la última fila, se convierte en Dama, Torre, Alfil o Caballo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

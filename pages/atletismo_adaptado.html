@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atletismo Adaptado - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="adaptados.html" class="back-arrow">←</a>
+            <h2>DEPORTE ADAPTADO <span>ATLETISMO ADAPTADO</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El Para Atletismo incluye carreras, saltos y lanzamientos, adaptados para atletas con discapacidad física, visual o intelectual. Es uno de los deportes más diversos y antiguos del programa paralímpico.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>CLASIFICACIÓN Y REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Clases 'T' (Pista/Saltos) y 'F' (Campo/Lanzamientos), seguidas de un número que indica el tipo y grado de discapacidad (11-13 visual, 31-38 parálisis cerebral, 51-57 silla de ruedas, etc.).</li>
+                        <li>Carreras para ciegos (T11): El atleta corre asistido por un *guía* con quien está unido por una cuerda atada al brazo o mano.</li>
+                        <li>Carreras en silla de ruedas (T51-T54): Los atletas utilizan sillas de carreras ligeras, impulsándose con los brazos.</li>
+                        <li>Lanzamientos: Se pueden realizar sentados en un banco especial para dar estabilidad (F51-F57).</li>
+                        <li>Salida: Adaptada; los atletas en silla de ruedas utilizan bloques especiales para sus manos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>PRUEBAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Carreras: 100m, 200m, 400m, 800m, 1500m, 5000m y maratón.</li>
+                        <li>Saltos: Salto de longitud y Salto de altura (solo para algunas clases de pie).</li>
+                        <li>Lanzamientos: Bala, Disco, Jabalina y la Maza (para atletas con gran limitación de tronco/brazo).</li>
+                        <li>Relevos: Incluyen categorías mixtas y adaptadas para diferentes tipos de discapacidad.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Sillas de Carreras: Diseñadas aerodinámicamente, con tres ruedas, específicas para velocidad.</li>
+                        <li>Maza: Implemento de lanzamiento usado por atletas de menor movilidad funcional.</li>
+                        <li>Guía (T11): Corredor sin discapacidad que asiste al atleta ciego, manteniendo la misma zancada.</li>
+                        <li>Banco de Lanzamiento: Estructura de metal o madera con anclajes para estabilizar al atleta.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Técnica de la Cuerda (T11): Mantener la tensión y sincronización perfecta entre el atleta y el guía.</li>
+                        <li>Impulso de Silla: Uso rápido y rítmico de guantes y brazos para propulsar la silla.</li>
+                        <li>Lanzamiento sentado: Generar la fuerza desde el tronco y el brazo de lanzamiento debido a la inestabilidad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <p class="copyright-notice">© 2025 Escuela PROA La Falda - Deporteca</p>
+    
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

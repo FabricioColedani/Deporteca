@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pato - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="nacionales.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>PATO</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El Pato es el deporte nacional de Argentina. Es un juego ecuestre que enfrenta a dos equipos de cuatro jinetes, quienes intentan conducir el balón (con seis asas) y encestarlo en un aro vertical.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se juega entre dos equipos de 4 jinetes cada uno.</li>
+                        <li>El partido consta de 6 tiempos (chukkas) de 8 minutos cada uno.</li>
+                        <li>El "Pato" (balón con asas) debe ser recogido y llevado por un jinete extendiendo el brazo para ofrecerlo al rival ("corrida").</li>
+                        <li>No se puede retener el pato: el jugador que lo lleva debe agarrar una de las asas y pasarlo o lanzarlo si es presionado.</li>
+                        <li>Se anota un gol encestando el pato en un aro de red ubicado verticalmente a 2.70m de altura.</li>
+                        <li>Línea de la corrida: Si el jinete no realiza la "corrida" correctamente o toca el pato con ambas manos, se cobra falta.</li>
+                        <li>El caballo es parte fundamental y debe ser protegido contra golpes indebidos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Defensa en zona: Proteger el aro propio, cubriendo las posibles líneas de tiro.</li>
+                        <li>Ataque rápido: Transicionar rápidamente después de un cambio de posesión con pases largos.</li>
+                        <li>Bloqueo de la corrida: Impedir que el jinete rival cumpla el requisito de la "corrida" obligatoria.</li>
+                        <li>Juego de equipo: Los jinetes se distribuyen en posiciones (delanteros, medios, defensores).</li>
+                        <li>Fintas de tiro: Simular un enceste para atraer la defensa y liberar a un compañero.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Caballos: Bien entrenados, ágiles y con capacidad de arranque y freno rápido.</li>
+                        <li>Pato: Balón de cuero con 6 asas, peso y diámetro reglamentarios.</li>
+                        <li>Cancha: De césped o arena, de hasta 220m de largo por 90m de ancho.</li>
+                        <li>Aros: Dos aros de red verticales (1 metro de diámetro) ubicados en el centro de las líneas de fondo.</li>
+                        <li>Vestimenta: Camiseta numerada, botas y casco de seguridad obligatorio.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Levantada: Recoger el pato del suelo sin desmontar del caballo.</li>
+                        <li>Corrida: Extender el brazo que lleva el pato para ofrecerlo al rival.</li>
+                        <li>Pase: Lanzar el pato con precisión mientras se cabalga a alta velocidad.</li>
+                        <li>Tiro al aro: Lanzamiento preciso para encestar el pato, a menudo desde el galope.</li>
+                        <li>Maniobras ecuestres: Control total del caballo para giros y frenadas bruscas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

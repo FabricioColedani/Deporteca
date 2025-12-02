@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>RUGBY</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El rugby es un deporte de contacto y evasión, jugado por dos equipos (15 jugadores en Rugby Union o 7 en Rugby Seven) que buscan llevar el balón ovalado hasta la zona de anotación (in-goal) del rival para marcar un "try".
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>El balón solo puede ser pasado hacia atrás o lateralmente con la mano</li>
+                        <li>El contacto (tackle) debe hacerse por debajo de los hombros</li>
+                        <li>Un "Try" (ensayo) se marca al apoyar el balón en la zona de in-goal (5 puntos)</li>
+                        <li>Después de un Try, el equipo puede patear a palos para una conversión (2 puntos)</li>
+                        <li>Lineout: Formación utilizada para reanudar el juego cuando el balón sale por las bandas</li>
+                        <li>Scrum (Melé): Formación para reiniciar el juego después de ciertas faltas menores, donde los delanteros se empujan para obtener el balón</li>
+                        <li>Ruck y Maul: Formaciones dinámicas sobre el suelo que se dan después de un tackle</li>
+                        <li>Penalización: Las faltas graves (ej: tackle alto) resultan en un golpe de castigo o tiro a palos (3 puntos)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Fase estática: Dominar las formaciones fijas (Scrum y Lineout) para asegurar la posesión</li>
+                        <li>Ataque a la línea: Utilizar la velocidad de los backs (defensores) con pases rápidos</li>
+                        <li>Juego de forwards: Usar a los jugadores pesados para avanzar metro a metro (fase de pick and go)</li>
+                        <li>Patear al espacio: Utilizar el pie para ganar terreno o presionar al rival en su zona defensiva</li>
+                        <li>Defensa en cortina: Mantener una línea defensiva organizada y unida para evitar huecos</li>
+                        <li>Ventaja: Si un equipo comete una falta, el árbitro puede dar tiempo para que el otro equipo aproveche la posesión</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Balón ovalado de cuero o material sintético</li>
+                        <li>Campo de césped con forma rectangular y dos zonas de in-goal al final</li>
+                        <li>Dos postes con un travesaño en forma de 'H' para los tiros a palos</li>
+                        <li>Vestimenta: Camiseta, pantalón corto, medias, bucal (recomendado)</li>
+                        <li>Calzado: Botines con tacos, a menudo más largos o resistentes debido al contacto</li>
+                        <li>Protecciones: Protector bucal, hombreras y cascos ligeros (opcionales)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Pase (offload): Lanzar el balón a un compañero mientras se está siendo tackleado</li>
+                        <li>Tackle: Derribar al rival al suelo (siempre por debajo de los hombros)</li>
+                        <li>Recuperación (turnover): Quitar el balón al rival en el ruck o maul</li>
+                        <li>Pateo de drop: Patada al balón que rebota en el suelo para ganar puntos o terreno</li>
+                        <li>Carrera evasiva: Moverse para evitar el tackle (fintas, cambios de ritmo)</li>
+                        <li>Empuje en el Scrum: La técnica coordinada de los delanteros para ganar el balón en la melé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

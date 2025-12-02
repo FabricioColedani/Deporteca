@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>TENIS</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El tenis es un deporte de raqueta que se juega individualmente (singles) o en parejas (dobles), donde los jugadores golpean una pelota pequeña sobre una red para que el oponente no pueda devolverla legalmente. Requiere agilidad, resistencia y precisión.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se puede jugar individualmente (2 jugadores) o en dobles (4 jugadores)</li>
+                        <li>El partido se gana al mejor de 3 o 5 sets, dependiendo del torneo</li>
+                        <li>Puntuación: 15, 30, 40 y juego (Game); si hay empate en 40 (deuce), se necesita ganar dos puntos consecutivos para llevarse el juego</li>
+                        <li>El set se gana al conseguir 6 juegos con una ventaja de al menos dos juegos</li>
+                        <li>El saque debe caer en el cuadro de servicio diagonalmente opuesto y debe ser botado antes de ser golpeado por el receptor</li>
+                        <li>Un jugador pierde el punto si la pelota bota dos veces en su lado de la cancha, si golpea la red y no pasa, o si toca la red con el cuerpo o la raqueta mientras la pelota está en juego</li>
+                        <li>Cambio de lado de la cancha: después del primer juego, y luego cada dos juegos impares</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Ataque y defensa: Variar entre golpes potentes y tiros con efecto (slice, topspin)</li>
+                        <li>Jugar al cuerpo: Dirigir el golpe directamente al oponente para limitar su reacción</li>
+                        <li>Subir a la red (serve and volley): Sacar y correr rápidamente hacia la red para terminar el punto con una volea</li>
+                        <li>Drop shot (Dejada): Golpe suave cerca de la red para que el rival no llegue</li>
+                        <li>Profundidad y ángulo: Mantener los golpes profundos para forzar al rival lejos de la línea de fondo o abrir ángulos para tiros ganadores</li>
+                        <li>Patrones de juego: Usar secuencias como saque potente seguido de un golpe al lado débil del rival</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Raqueta de tenis: Debe cumplir con las especificaciones de tamaño y encordado</li>
+                        <li>Pelotas de tenis: Generalmente amarillas, de un tamaño y peso regulados</li>
+                        <li>Cancha rectangular: 23.77m de largo x 8.23m de ancho (singles) o 10.97m (dobles)</li>
+                        <li>Red: Ubicada a 0.914m de altura en el centro y 1.07m en los postes</li>
+                        <li>Tipos de superficie: Pista dura, tierra batida (arcilla), hierba (césped)</li>
+                        <li>Vestimenta adecuada: Ropa cómoda, zapatillas específicas para tenis con buen soporte y agarre</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Saque (Service): Golpe inicial para comenzar el punto; puede ser plano, con slice o topspin</li>
+                        <li>Derecha (Forehand): Golpe realizado con la palma de la mano dominante hacia adelante</li>
+                        <li>Revés (Backhand): Golpe realizado con el dorso de la mano dominante hacia adelante (puede ser a una o dos manos)</li>
+                        <li>Volea (Volley): Golpe sin que la pelota bote, generalmente cerca de la red</li>
+                        <li>Remate (Smash): Golpe aéreo potente, similar al saque, usado contra un globo (lob)</li>
+                        <li>Globo (Lob): Golpe alto y profundo para superar a un rival que está cerca de la red</li>
+                        <li>Empuñaduras: Diferentes formas de sujetar la raqueta (Continental, Este, Oeste) que afectan el golpe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natación Adaptada - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="adaptados.html" class="back-arrow">←</a>
+            <h2>DEPORTE ADAPTADO <span>NATACIÓN ADAPTADA</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            La Natación Adaptada es uno de los deportes paralímpicos más antiguos. Los nadadores compiten en estilos y distancias similares a los convencionales, con adaptaciones en la salida, el viraje y la clasificación funcional.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS Y CLASIFICACIÓN</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>La clasificación es funcional, dividida en 10 categorías de discapacidad física (S1 a S10), 3 de discapacidad visual (S11 a S13) y 1 de discapacidad intelectual (S14).</li>
+                        <li>Salida: Los nadadores pueden optar por salir de la plataforma, desde el borde, o directamente desde el agua (S1 a S4, o si lo requieren).</li>
+                        <li>Natación S11 (Ciegos Totales): Utilizan gafas opacas y son asistidos por un *tapper*.</li>
+                        <li>Viraje y llegada: En las clases con discapacidad visual, el *tapper* golpea al nadador con un palo con punta acolchada para indicar el final de la piscina.</li>
+                        <li>El estilo de nado debe cumplir con las reglas básicas de FINA (ej: en mariposa, los brazos deben moverse simultáneamente).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ESTILOS Y DISTANCIAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Estilos: Libre, Espalda, Pecho y Mariposa.</li>
+                        <li>Distancias: 50m, 100m, 200m y 400m libre; 100m mariposa, pecho y espalda; 200m combinados.</li>
+                        <li>Adaptación de estilo: Algunos nadadores utilizan solo una parte de su cuerpo para el movimiento, siempre y cuando cumplan con el reglamento del estilo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Piscina: De 50m (larga) o 25m (corta) con los carriles reglamentarios.</li>
+                        <li>Tapper: Objeto largo con una punta suave (espuma) usado por el asistente para tocar al nadador ciego.</li>
+                        <li>Equipamiento: Gafas de natación, gorra y traje de baño.</li>
+                        <li>Bloques de salida: Adaptados para permitir a los nadadores con discapacidad usar el agarre manual si es necesario.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS ADAPTADAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Técnica de salida: Puede ser una zambullida, un empuje o una salida sentada.</li>
+                        <li>Nado unilateral: En categorías S1 a S5, se acepta el uso de un solo brazo o pierna para la propulsión.</li>
+                        <li>Coordinación de Tapper: Sincronización entre el entrenador y el nadador para indicar el viraje.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

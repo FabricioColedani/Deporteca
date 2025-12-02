@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelota Paleta - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="nacionales.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>PELOTA PALETA</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            La Pelota Paleta es una especialidad de la Pelota Vasca. Se juega con una pala de madera maciza para golpear una pelota de goma contra un único muro (frontón), buscando que el rival no pueda devolverla legalmente.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Se puede jugar a frontón de 1 pared (mano a mano o en parejas) o de 3 paredes.</li>
+                        <li>El objetivo es que la pelota golpee el frontón y bote dos veces en el suelo antes de que el oponente la devuelva.</li>
+                        <li>El saque debe botar en el frontón y caer entre las líneas de falta y pasa.</li>
+                        <li>Puntuación: Se utiliza el sistema de tantos (rally point) o puntos corridos (quinces o treintas) según la modalidad.</li>
+                        <li>Falta: Si la pelota toca el suelo antes de golpear el frontón o golpea fuera de las líneas de juego.</li>
+                        <li>Falta: Si el jugador toca la pelota con cualquier parte del cuerpo que no sea la paleta.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Profundidad: Mantener la pelota profunda para que el rival deba responder desde el fondo de la cancha.</li>
+                        <li>Corta (Chicane): Devolver la pelota muy cerca del frontón para forzar una respuesta rápida.</li>
+                        <li>Efectos: Usar el revés o el corte para modificar la trayectoria y el bote de la pelota.</li>
+                        <li>Ataque al rincón: Dirigir la pelota a la unión del frontón con el suelo (cuyo bote es difícil).</li>
+                        <li>Posición: En dobles, coordinar la cobertura de la cancha entre el zaguero y el delantero.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Paleta: Pala de madera maciza (guayacán o lenga) con formas y pesos variables.</li>
+                        <li>Pelota: Generalmente de goma maciza, puede ser de goma negra o goma viva (más rápida).</li>
+                        <li>Frontón: Muro vertical de 10 a 11 metros de altura, pintado con una línea de falta y otra de pasa.</li>
+                        <li>Cancha (Cancha Larga): De 30, 36 o 54 metros de largo.</li>
+                        <li>Vestimenta: Ropa deportiva y calzado con buena tracción para cambios de dirección.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Golpe de derecha: Golpe con el lado dominante del cuerpo.</li>
+                        <li>Golpe de revés: Golpe con el lado opuesto.</li>
+                        <li>Volea: Golpear la pelota antes de que toque el suelo (solo cerca del frontón en algunas canchas).</li>
+                        <li>Saque: Debe ser potente y con efecto para dificultar la recepción.</li>
+                        <li>Corte: Imprimir un efecto de rotación hacia atrás (backspin) a la pelota para que "muera" al botar.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

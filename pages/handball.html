@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handball - Deporteca</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>HANDBALL</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El balonmano (handball) es un deporte de equipo rápido donde dos equipos de siete jugadores (seis de campo y un portero) intentan anotar goles lanzando un balón con las manos a la portería rival.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span> 
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Cada equipo juega con 7 jugadores (6 de campo y 1 portero)</li>
+                        <li>El partido se divide en dos tiempos de 30 minutos con un descanso</li>
+                        <li>Un jugador solo puede dar 3 pasos con el balón en las manos antes de botar o pasar</li>
+                        <li>No se puede retener el balón por más de 3 segundos sin botar o pasar</li>
+                        <li>Área de 6 metros: Solo el portero puede estar dentro de esta área; los jugadores de campo deben saltar para lanzar</li>
+                        <li>Faltas: El contacto se permite, pero no los empujones, agarres o golpes</li>
+                        <li>Sanciones: Amonestación (tarjeta amarilla), Exclusión (2 minutos fuera del juego), Descalificación (tarjeta roja)</li>
+                        <li>Lanzamiento de 7 metros: Se otorga un penalti si se interrumpe ilegalmente una clara ocasión de gol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Ataque 6-0: Todos los jugadores de campo en la línea defensiva para bloquear la visión del portero</li>
+                        <li>Defensa 3-2-1: Defensa agresiva para forzar errores lejos de la portería</li>
+                        <li>Cruces y pases: Movimientos coordinados de los atacantes para desorientar a la defensa</li>
+                        <li>Penetración: Movimientos rápidos de los laterales y centrales para romper la línea defensiva</li>
+                        <li>Contraataque: La transición más rápida posible de defensa a ataque después de recuperar el balón</li>
+                        <li>Golpe franco: Tiro libre después de una falta menor, donde la defensa forma una barrera</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Balón de handball: Debe caber en una mano para el control y el lanzamiento (talla 3, 2 o 1 según categoría)</li>
+                        <li>Cancha rectangular: 40m de largo x 20m de ancho</li>
+                        <li>Portería: 3m de ancho x 2m de alto</li>
+                        <li>Área de portería: Delimitada por una línea de 6 metros</li>
+                        <li>Línea de 9 metros: Usada para los lanzamientos de golpe franco</li>
+                        <li>Calzado: Zapatillas con excelente agarre para el movimiento en pista cubierta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Pase: De pecho, picado, por encima del hombro o de faja (por detrás de la espalda)</li>
+                        <li>Bote (Dribling): Controlar el balón mientras se mueve con la mano</li>
+                        <li>Lanzamiento: En suspensión (saltando) o en apoyo (con los pies en el suelo)</li>
+                        <li>Finta (Engaño): Mover el cuerpo para desorientar al defensor antes de pasar o lanzar</li>
+                        <li>Bloqueo (Defensa): Usar el cuerpo o los brazos para obstaculizar el tiro del atacante</li>
+                        <li>Parada del portero: Uso de manos, pies y cuerpo para detener el balón, a menudo fuera del área</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/templates.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
