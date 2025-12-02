@@ -444,6 +444,9 @@ h3.section-heading {
     color: #fff;
     animation: fadeInUp 0.6s ease-out;
     animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
 }
 
 .classification-card:nth-child(1) { animation-delay: 0.1s; }
@@ -948,4 +951,63 @@ footer {
         height: auto;
         aspect-ratio: 3/4;
     }
+}
+
+/* Fix para el footer - asegurar que siempre esté al final */
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* El contenido principal debe crecer para empujar el footer */
+body > section,
+body > .hero,
+body > div:not(#header-placeholder):not(#footer-placeholder) {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+    font-size: 12px;
+    color: #777;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fix para el flash blanco - transición suave entre páginas */
+body {
+    opacity: 0;
+    animation: fadeInBody 0.3s ease-in forwards;
+}
+
+@keyframes fadeInBody {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Prevenir el flash blanco en las transiciones */
+html {
+    background-color: #1a1a1a;
+}
+
+/* Mejorar las transiciones de los enlaces */
+a {
+    transition: all 0.2s ease;
+}
+
+/* Asegurar que las secciones tengan el espacio adecuado */
+.main-section {
+    min-height: calc(100vh - 400px);
 }
