@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquet - Deporteca</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Header Template -->
+    <div id="header-placeholder"></div>
+
+    <section class="main-section sport-detail">
+        <div class="sport-header">
+            <a href="populares.html" class="back-arrow">←</a>
+            <h2>DEPORTE <span>BASQUET</span></h2>
+        </div>
+        
+        <p class="sport-description">
+            El básquet es un deporte de equipo donde dos grupos de cinco jugadores buscan encestar la pelota en el aro del contrario. Combina velocidad, estrategia y trabajo en equipo para alcanzar la victoria.
+        </p>
+
+        <div class="regulations-container">
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>REGLAS</span>
+                    <span class="arrow-icon">∧</span>
+                </div>
+                <div class="regulation-content active">
+                    <ul>
+                        <li>Cada equipo juega con 5 jugadores en la cancha</li>
+                        <li>El partido se divide en 4 cuartos (10-12 minutos cada uno según la liga)</li>
+                        <li>No se puede caminar o correr con el balón sin botarlo (dobles)</li>
+                        <li>El equipo tiene 24 segundos para intentar un tiro al aro (NBA/FIBA)</li>
+                        <li>Un jugador no puede botear, tomar el balón y volver a botear (doble drible)</li>
+                        <li>Cada canasta dentro del arco vale 2 puntos, fuera del arco 3 puntos y los tiros libres 1 punto</li>
+                        <li>Faltas: contacto ilegal, empujones y bloqueos no permitidos; tras 5-6 faltas el jugador queda fuera del juego</li>
+                        <li>Los tiros libres se otorgan después de ciertas faltas; el rival no debe interferir hasta el final del tiro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÁCTICA</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Pick and Roll: Un jugador bloquea al defensor de un compañero para crear espacio</li>
+                        <li>Defensa en zona: Los jugadores defienden áreas específicas en lugar de marcar individualmente</li>
+                        <li>Defensa individual: Cada jugador marca a un oponente específico</li>
+                        <li>Contraataque rápido: Avanzar rápidamente tras recuperar el balón</li>
+                        <li>Juego interior-exterior: Combinar tiros desde afuera con jugadas cerca del aro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>ELEMENTOS BÁSICOS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Balón de básquet (tamaño 7 para hombres, 6 para mujeres)</li>
+                        <li>Cancha rectangular con medidas reglamentarias (28m x 15m)</li>
+                        <li>Dos aros con tableros ubicados a 3.05m de altura</li>
+                        <li>Calzado deportivo con buena tracción y soporte para el tobillo</li>
+                        <li>Vestimenta deportiva cómoda (camiseta, short)</li>
+                        <li>Protecciones opcionales: rodilleras, tobilleras, bucal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="regulation-item">
+                <div class="regulation-header" onclick="toggleRegulation(this)">
+                    <span>TÉCNICAS</span>
+                    <span class="arrow-icon">∨</span>
+                </div>
+                <div class="regulation-content">
+                    <ul>
+                        <li>Dribling: Botar el balón con una mano de manera controlada</li>
+                        <li>Pase de pecho: Lanzar el balón desde el pecho con ambas manos</li>
+                        <li>Pase picado: El balón rebota en el suelo antes de llegar al compañero</li>
+                        <li>Pase por encima de la cabeza: Para distancias largas</li>
+                        <li>Tiro en suspensión: Saltar y lanzar en el punto más alto</li>
+                        <li>Bandeja: Acercarse al aro y anotar con una mano</li>
+                        <li>Gancho: Tiro lateral con un brazo extendido</li>
+                        <li>Rebote: Capturar el balón después de un tiro fallado</li>
+                        <li>Defensa: Posición baja, pies activos, manos arriba</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Template -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/templates.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

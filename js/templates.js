@@ -34,7 +34,7 @@ function loadHeader() {
 function loadFooter() {
     const footerHTML = `
         <footer>
-            <p>© 2025 Escuela PRO La Falda - Deporteca</p>
+            <p>© 2025 Escuela PROA La Falda - Deporteca</p>
         </footer>
     `;
     
