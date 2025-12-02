@@ -254,136 +254,252 @@ h3.section-heading {
     animation: fadeIn 1s ease-out 0.3s both;
 }
 
-/* Noticias */
+/* ================================================= */
+/* ESTILOS DE LA SECCIÓN DE NOTICIAS */
+/* ================================================= */
+
+/* Contenedor principal del slider */
 .news-slider {
     position: relative;
-    background-color: #2a2a2a;
-    border-radius: 15px;
-    padding: 30px;
+    /* Centra la tarjeta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px; /* Espacio para que los botones de navegación no toquen la tarjeta */
     margin-top: 20px;
-    transition: box-shadow 0.3s ease;
 }
 
-.news-slider:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
+/* Tarjeta de Noticia (El Artefacto principal) */
 .news-card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    color: #000;
-    animation: scaleIn 0.5s ease-out;
-    transition: transform 0.3s ease;
+    position: relative; 
+    width: 650px; /* Ancho fijo para la estética de la tarjeta */
+    height: 550px; /* Altura fija para el contenido */
+    background-color: #ffffff;
+    border-radius: 12px; /* Esquinas redondeadas suaves */
+    overflow: hidden; /* CRÍTICO: Recorta la imagen en las esquinas */
+    /* Sombra elegante y suave para que resalte */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1); 
+    cursor: pointer;
+    
+    /* Transiciones para suavidad al pasar el mouse */
+    transition: all 0.4s ease-in-out;
 }
 
-@keyframes scaleIn {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+.news-card:hover {
+    transform: translateY(-5px) scale(1.02); /* Efecto 3D sutil al pasar el mouse */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* Imagen de la Noticia (Contenedor de fondo) */
+.news-image {
+    height: 78%; /* Ocupa el 70% superior de la tarjeta */
+    width: 100%;
+    /* Propiedades de fondo para la URL de la imagen */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Transición para el zoom en hover */
+    transition: transform 0.4s ease;
+}
+
+/* Zoom de la imagen al hacer hover en la tarjeta */
+.news-card:hover .news-image {
+    transform: scale(1.08); 
+}
+
+/* Encabezado (Banda azul superior) */
 .news-header {
-    background-color: #2a5a9e;
-    color: #fff;
-    padding: 15px;
+    position: absolute; /* Superpuesto a la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    
+    /* Estilo del Header */
+    /* El color azul oscuro de la imagen de ejemplo */
+    background-color: #2a5a9e; 
+    color: white;
+    padding: 12px 15px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* Se quita la transparencia (0.95) para un color sólido y limpio */
 }
 
+/* Logo o Badge dentro del Header */
 .news-badge {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    animation: bounce 2s ease-in-out infinite;
+    /* Eliminamos las propiedades de padding y animación de bounce */
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* El color de fondo es blanco para el ícono de la imagen de ejemplo */
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
+.news-badge img {
+    width: 70%; /* Escalar el SVG/Icono */
+    height: 70%;
+    object-fit: contain;
 }
 
 .news-league {
+    font-size: 1.1em;
     font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
 
 .news-team {
-    font-size: 12px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: 0.9;
 }
 
-.news-image {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, #1a4d8f 0%, #2a5a9e 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    color: #ffd700;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.news-card:hover .news-image {
-    transform: scale(1.05);
-}
-
+/* Contenido (Banda blanca inferior) */
 .news-content {
-    padding: 20px;
+    /* Ocupa el 30% restante de la altura de la tarjeta */
+    height: 22%; 
+    padding: 15px;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Agregar un borde superior muy sutil para separación */
+    border-top: 1px solid #f0f0f0;
 }
 
 .news-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
+    font-size: 1.3em; /* Título más grande y dominante */
+    font-weight: 800; /* Extra bold para impacto */
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .news-time {
-    font-size: 12px;
+    font-size: 0.9em;
     color: #666;
     margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
+
+/* ================================================= */
+/* ESTILOS DEL SLIDER Y NAVEGACIÓN */
+/* ================================================= */
 
 .slider-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro semi-transparente */
     border: none;
     color: #fff;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
+    font-size: 30px; /* Flechas más grandes */
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s ease;
+    /* Sombra para que se vean flotantes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.slider-nav:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Se vuelve más claro al pasar el mouse */
+    transform: translateY(-50%) scale(1.1);
+    color: #ff9800; /* Color naranja al pasar el mouse */
+}
+
+/* Posicionamiento de los botones fuera del news-card */
+.slider-nav.prev {
+    left: 20px; /* Separado del borde del slider/contenedor */
+}
+
+.slider-nav.next {
+    right: 20px; /* Separado del borde del slider/contenedor */
+}
+
+/* Estilos de los puntos (dots) */
+.news-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.news-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.slider-nav:hover {
-    background-color: rgba(255,255,255,0.4);
-    transform: translateY(-50%) scale(1.1);
+.news-dot.active {
+    background-color: #ff9800;
+    width: 24px;
+    border-radius: 4px;
 }
 
-.slider-nav:active {
-    transform: translateY(-50%) scale(0.95);
+/* Estilos para el indicador de carga */
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+    z-index: 5;
 }
 
-.slider-nav.prev {
-    left: 10px;
+.news-slider.loading .loading-indicator {
+    display: block;
 }
 
-.slider-nav.next {
-    right: 10px;
+/* ================================================= */
+/* RESPONSIVE DESIGN (Para móviles) */
+/* ================================================= */
+
+@media (max-width: 450px) {
+    .news-slider {
+        padding: 20px 0; /* Quitamos padding horizontal en móvil */
+    }
+    
+    .news-card {
+        width: 90vw; /* El 90% del ancho del viewport */
+        height: 380px; /* Reducimos la altura */
+        /* Aseguramos que la tarjeta ocupe el espacio sin desbordar */
+        margin: 0 auto; 
+    }
+    
+    .news-title {
+        font-size: 1.1em; /* Reducimos el tamaño del título */
+    }
+    
+    .slider-nav {
+        /* Los movemos más cerca del borde para que el toque sea fácil */
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    
+    .slider-nav.prev {
+        left: 5px; 
+    }
+
+    .slider-nav.next {
+        right: 5px; 
+    }
 }
 
 /* Sobre Nosotros */

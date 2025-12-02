@@ -6,6 +6,11 @@
     <title>Deporteca - Biblioteca de Deportes</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="/assets/images/icon.png" type="image/x-icon">
+    <style>
+
+        
+      
+    </style>
 </head>
 <body>
     <!-- Header Template -->
@@ -23,24 +28,28 @@
         <p class="section-subtitle">Descubre cuales son las últimas novedades del mundo deportivo y sorprende a todos tus compañeros.</p>
         
         <div class="news-slider">
-            <button class="slider-nav prev">‹</button>
+            <button class="slider-nav prev" aria-label="Noticia anterior">‹</button>
+            <div class="loading-indicator">Cargando noticias...</div>
             <div class="news-card">
                 <div class="news-header">
                     <div class="news-badge">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='18' fill='%232a5a9e'/></svg>" alt="Boca">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='20' cy='20' r='18' fill='%232a5a9e'/></svg>" alt="Logo">
                     </div>
                     <div>
-                        <div class="news-league">FUTBOL ARGENTINO</div>
-                        <div class="news-team">BOCA JUNIORS</div>
+                        <div class="news-league">CARGANDO...</div>
+                        <div class="news-team">DEPORTECA</div>
                     </div>
                 </div>
-                <div class="news-image">10</div>
+                <div class="news-image"></div>
                 <div class="news-content">
-                    <div class="news-title">CAVANI HACE UN GOL</div>
-                    <p class="news-time">⏱</p>
+                    <div class="news-title">BIENVENIDO A DEPORTECA</div>
+                    <p class="news-time">📅 Hoy</p>
                 </div>
             </div>
-            <button class="slider-nav next">›</button>
+            <button class="slider-nav next" aria-label="Siguiente noticia">›</button>
+            
+            <!-- Indicadores de slide -->
+            <div class="news-dots" id="news-dots"></div>
         </div>
     </section>
 
